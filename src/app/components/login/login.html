@@ -1,0 +1,60 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                    
+                    <!-- Formulario de Login -->
+                    <form (ngSubmit)="realizarLogin()">
+                        
+                        <!-- Campo para el Usuario / Apellido -->
+                        <div class="mb-3">
+                            <label for="cajaUser" class="form-label">Usuario:</label>
+                            <input 
+                                type="text" 
+                                id="cajaUser" 
+                                class="form-control" 
+                                placeholder="Ej: REY" 
+                                
+                                name="username" 
+                                required 
+                            />
+                        </div>
+
+                        <!-- Campo para el Password / Número -->
+                        <div class="mb-3">
+                            <label for="cajaPass" class="form-label">Contraseña:</label>
+                            <input 
+                                type="password" 
+                                id="cajaPass" 
+                                class="form-control" 
+                                placeholder="Ej: 7839" 
+                                
+                                name="password" 
+                                required 
+                            />
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                Login
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            
+            <!-- Pequeña ayuda visual con los usuarios de prueba -->
+            <div class="alert alert-info mt-3" role="alert">
+                <strong>Usuarios de prueba:</strong><br>
+                • Usuario: <code>REY</code> / Pass: <code>7839</code><br>
+                • Usuario: <code>SANCHA</code> / Pass: <code>7369</code>
+            </div>
+
+        </div>
+    </div>
+</div>
